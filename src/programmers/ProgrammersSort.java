@@ -24,7 +24,7 @@ public class ProgrammersSort {
 //        for(String s : strNums)
 //            answer += s;
         String answer = IntStream.of(numbers)
-                .mapToObj(String::valueOf)
+                .mapToObj(String::valueOf) // (n) -> String.valueOf(n)
                 .sorted((s1,s2) -> (s2+s1).compareTo(s1+s2))
                 .collect(Collectors.joining());
 
