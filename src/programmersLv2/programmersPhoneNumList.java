@@ -9,7 +9,7 @@ public class programmersPhoneNumList {
         boolean answer = true;
 
         for(int i = 0 ; i < phone_book.length ; i++) {
-            for (int k = 1; k < phone_book.length; k++) {
+            for (int k = 0; k < phone_book.length; k++) {
                 if (i!=k && phone_book[k].startsWith(phone_book[i]) == true) {
                     answer = false;
                     break;
